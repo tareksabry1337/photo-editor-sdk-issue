@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ImglyKit",
+        "repositoryURL": "https://github.com/imgly/imglykit-sp.git",
+        "state": {
+          "branch": null,
+          "revision": "ba5057dc1f2e706d82a525307a794aa06dd26d5e",
+          "version": "10.26.0"
+        }
+      },
+      {
+        "package": "PhotoEditorSDK",
+        "repositoryURL": "https://github.com/imgly/pesdk-ios-build",
+        "state": {
+          "branch": null,
+          "revision": "af24b5d80e5e97d3cbc2d68dac4502d667bd12ec",
+          "version": "10.26.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

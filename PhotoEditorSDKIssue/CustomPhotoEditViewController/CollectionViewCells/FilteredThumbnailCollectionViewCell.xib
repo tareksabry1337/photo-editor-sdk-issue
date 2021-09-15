@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilteredThumbnailCollectionViewCell" customModule="PhotoEditorSDKIssue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VIN-Uu-HLG">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="175"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wb9-Do-dYy">
+                        <rect key="frame" x="0.0" y="154" width="232" height="21"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-NL-DO8">
+                        <rect key="frame" x="4" y="154" width="224" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Ouj-I6-ths">
+                        <rect key="frame" x="106" y="77.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wb9-Do-dYy" secondAttribute="trailing" id="02k-9c-Sgc"/>
+                <constraint firstAttribute="bottom" secondItem="cXL-NL-DO8" secondAttribute="bottom" id="3i1-Sm-IpR"/>
+                <constraint firstItem="VIN-Uu-HLG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5vT-yn-QT2"/>
+                <constraint firstAttribute="bottom" secondItem="Wb9-Do-dYy" secondAttribute="bottom" id="F6H-IK-m0Y"/>
+                <constraint firstItem="VIN-Uu-HLG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JEm-Rp-y5q"/>
+                <constraint firstItem="Ouj-I6-ths" firstAttribute="centerY" secondItem="VIN-Uu-HLG" secondAttribute="centerY" id="O5d-Do-W2r"/>
+                <constraint firstAttribute="trailing" secondItem="cXL-NL-DO8" secondAttribute="trailing" constant="4" id="Oej-Ti-wbJ"/>
+                <constraint firstAttribute="trailing" secondItem="VIN-Uu-HLG" secondAttribute="trailing" id="a6Q-yZ-FpC"/>
+                <constraint firstItem="cXL-NL-DO8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="c8w-gN-mrX"/>
+                <constraint firstItem="Wb9-Do-dYy" firstAttribute="top" secondItem="cXL-NL-DO8" secondAttribute="top" id="jLY-ip-X7X"/>
+                <constraint firstAttribute="bottom" secondItem="VIN-Uu-HLG" secondAttribute="bottom" id="mG2-5N-mC1"/>
+                <constraint firstItem="Ouj-I6-ths" firstAttribute="centerX" secondItem="VIN-Uu-HLG" secondAttribute="centerX" id="rsp-RT-nFO"/>
+                <constraint firstItem="Wb9-Do-dYy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="skc-nZ-TFx"/>
+            </constraints>
+            <size key="customSize" width="232" height="175"/>
+            <connections>
+                <outlet property="activityIndicator" destination="Ouj-I6-ths" id="AB2-b7-ijY"/>
+                <outlet property="gradientBackgroundView" destination="Wb9-Do-dYy" id="lrs-Ny-Ec1"/>
+                <outlet property="thumbnailImageView" destination="VIN-Uu-HLG" id="3zF-Md-7Jo"/>
+                <outlet property="titleLabel" destination="cXL-NL-DO8" id="fzz-Jh-KuO"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="194.53125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

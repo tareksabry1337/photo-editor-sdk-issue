@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		CB1AFA2126F1EABD00F08951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1AFA1F26F1EABD00F08951 /* Main.storyboard */; };
 		CB1AFA2326F1EABF00F08951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1AFA2226F1EABF00F08951 /* Assets.xcassets */; };
 		CB1AFA2626F1EABF00F08951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1AFA2426F1EABF00F08951 /* LaunchScreen.storyboard */; };
+		CB1AFA2F26F1EB1200F08951 /* PhotoEditorSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CB1AFA2E26F1EB1200F08951 /* PhotoEditorSDK */; };
+		CB1AFA3126F1EB1D00F08951 /* PhotoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1AFA3026F1EB1D00F08951 /* PhotoEditor.swift */; };
+		CB1AFA3926F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1AFA3426F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.xib */; };
+		CB1AFA3A26F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1AFA3526F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.swift */; };
+		CB1AFA3B26F1EB9800F08951 /* CustomPhotoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1AFA3726F1EB9800F08951 /* CustomPhotoEditViewController.swift */; };
+		CB1AFA3C26F1EB9800F08951 /* CustomPhotoEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1AFA3826F1EB9800F08951 /* CustomPhotoEditViewController.xib */; };
+		CB1AFA3E26F1EBB200F08951 /* FilteredThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1AFA3D26F1EBB200F08951 /* FilteredThumbnail.swift */; };
+		CB1AFA4026F1EC2500F08951 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1AFA3F26F1EC2500F08951 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		CB1AFA2226F1EABF00F08951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB1AFA2526F1EABF00F08951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB1AFA2726F1EABF00F08951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1AFA3026F1EB1D00F08951 /* PhotoEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditor.swift; sourceTree = "<group>"; };
+		CB1AFA3426F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilteredThumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
+		CB1AFA3526F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB1AFA3726F1EB9800F08951 /* CustomPhotoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoEditViewController.swift; sourceTree = "<group>"; };
+		CB1AFA3826F1EB9800F08951 /* CustomPhotoEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPhotoEditViewController.xib; sourceTree = "<group>"; };
+		CB1AFA3D26F1EBB200F08951 /* FilteredThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredThumbnail.swift; sourceTree = "<group>"; };
+		CB1AFA3F26F1EC2500F08951 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1AFA2F26F1EB1200F08951 /* PhotoEditorSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +79,39 @@
 				CB1AFA2226F1EABF00F08951 /* Assets.xcassets */,
 				CB1AFA2426F1EABF00F08951 /* LaunchScreen.storyboard */,
 				CB1AFA2726F1EABF00F08951 /* Info.plist */,
+				CB1AFA3026F1EB1D00F08951 /* PhotoEditor.swift */,
+				CB1AFA3D26F1EBB200F08951 /* FilteredThumbnail.swift */,
+				CB1AFA3226F1EB9800F08951 /* CustomPhotoEditViewController */,
+				CB1AFA3F26F1EC2500F08951 /* UIViewExtension.swift */,
 			);
 			path = PhotoEditorSDKIssue;
+			sourceTree = "<group>";
+		};
+		CB1AFA3226F1EB9800F08951 /* CustomPhotoEditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB1AFA3626F1EB9800F08951 /* View */,
+				CB1AFA3326F1EB9800F08951 /* CollectionViewCells */,
+			);
+			path = CustomPhotoEditViewController;
+			sourceTree = "<group>";
+		};
+		CB1AFA3326F1EB9800F08951 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CB1AFA3426F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.xib */,
+				CB1AFA3526F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		CB1AFA3626F1EB9800F08951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB1AFA3726F1EB9800F08951 /* CustomPhotoEditViewController.swift */,
+				CB1AFA3826F1EB9800F08951 /* CustomPhotoEditViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,9 @@
 			dependencies = (
 			);
 			name = PhotoEditorSDKIssue;
+			packageProductDependencies = (
+				CB1AFA2E26F1EB1200F08951 /* PhotoEditorSDK */,
+			);
 			productName = PhotoEditorSDKIssue;
 			productReference = CB1AFA1626F1EABD00F08951 /* PhotoEditorSDKIssue.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +160,9 @@
 				Base,
 			);
 			mainGroup = CB1AFA0D26F1EABD00F08951;
+			packageReferences = (
+				CB1AFA2D26F1EB1200F08951 /* XCRemoteSwiftPackageReference "pesdk-ios-build" */,
+			);
 			productRefGroup = CB1AFA1726F1EABD00F08951 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,8 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1AFA3C26F1EB9800F08951 /* CustomPhotoEditViewController.xib in Resources */,
 				CB1AFA2626F1EABF00F08951 /* LaunchScreen.storyboard in Resources */,
 				CB1AFA2326F1EABF00F08951 /* Assets.xcassets in Resources */,
+				CB1AFA3926F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.xib in Resources */,
 				CB1AFA2126F1EABD00F08951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +193,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB1AFA1E26F1EABD00F08951 /* ViewController.swift in Sources */,
+				CB1AFA3126F1EB1D00F08951 /* PhotoEditor.swift in Sources */,
 				CB1AFA1A26F1EABD00F08951 /* AppDelegate.swift in Sources */,
 				CB1AFA1C26F1EABD00F08951 /* SceneDelegate.swift in Sources */,
+				CB1AFA3E26F1EBB200F08951 /* FilteredThumbnail.swift in Sources */,
+				CB1AFA3B26F1EB9800F08951 /* CustomPhotoEditViewController.swift in Sources */,
+				CB1AFA4026F1EC2500F08951 /* UIViewExtension.swift in Sources */,
+				CB1AFA3A26F1EB9800F08951 /* FilteredThumbnailCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB1AFA2D26F1EB1200F08951 /* XCRemoteSwiftPackageReference "pesdk-ios-build" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/imgly/pesdk-ios-build";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB1AFA2E26F1EB1200F08951 /* PhotoEditorSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB1AFA2D26F1EB1200F08951 /* XCRemoteSwiftPackageReference "pesdk-ios-build" */;
+			productName = PhotoEditorSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB1AFA0E26F1EABD00F08951 /* Project object */;
 }
