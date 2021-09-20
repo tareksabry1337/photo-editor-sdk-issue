@@ -164,46 +164,6 @@ class CustomPhotoEditViewController: ViewController {
         filtersButton.setTitle("FILTERS", for: .normal)
         editButton.setTitle("EDIT", for: .normal)
     }
-    
-//    func addObservables() {
-//
-//        filteredThumbnails
-//            .bind(to: filtersCollectionView) { filteredThumbnails, indexPath, collectionView in
-//                let cell: FilteredThumbnailCollectionViewCell = collectionView.dequeueCell(for: indexPath)
-//
-//                cell.configure(filteredThumbnail: filteredThumbnails[indexPath.item])
-//
-//                return cell
-//            }
-//
-//        filtersCollectionView
-//            .reactive
-//            .selectedItemIndexPath
-//            .bind(to: self) { viewController, indexPath in
-//                viewController.filteredThumbnails.batchUpdate { collection in
-//                    collection[viewController.selectedFilterIndex].set(value: false, for: \.isSelected)
-//                    collection[indexPath.item].set(value: true, for: \.isSelected)
-//                    viewController.selectedFilterIndex = indexPath.item
-//                    viewController.filterEditController.setEffect(collection[indexPath.item].effect, animated: true)
-//                }
-//            }
-//
-//        filtersButton
-//            .reactive
-//            .tap
-//            .bind(to: self) { viewController in
-//                viewController.filtersButton.isSelected = true
-//                viewController.editButton.isSelected = false
-//            }
-//
-//        editButton
-//            .reactive
-//            .tap
-//            .bind(to: self) { viewController in
-//                viewController.editButton.isSelected = true
-//                viewController.filtersButton.isSelected = false
-//            }
-//    }
 
 }
 
@@ -241,17 +201,7 @@ extension CustomPhotoEditViewController: MediaEditPreviewControllerDelegate {
     func mediaEditPreviewControllerPreviewInsets(
         _ mediaEditPreviewController: MediaEditPreviewController
     ) -> UIEdgeInsets {
-        let viewSize = CGSize(
-            width: UIScreen.main.bounds.width,
-            height: UIScreen.main.bounds.width * 1.33
-        )
-        
-        let imageSize = photo.image?.size ?? .zero
-        let imageAspectRatio = imageSize.height / imageSize.width
-        let imageHeightInView = viewSize.width * imageAspectRatio
-        let yDifference = viewSize.height - imageHeightInView
-
-        return UIEdgeInsets(top: 0, left: 0, bottom: yDifference, right: 0)
+        return .zero
     }
     
     func mediaEditPreviewControllerPreviewScale(_ mediaEditPreviewController: MediaEditPreviewController) -> CGFloat {
